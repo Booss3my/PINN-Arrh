@@ -56,5 +56,5 @@ $$L_{Boundary} = \sum|f(T_{synth},0,SOC_{synth};\theta)|$$
 The coefficients $a_1$ , $a_2$ , $a_3$ , $a_4$ were optimized to balance the contribution of each loss and also the fact that the losses have different scales.
 
 #### Results
-- This approach improved the mean absolute error on a batch test cells, from 1,05%(industry standard method) to 0.38%(our method), (in % because we compute the capacity normalized with with starting value (in %)).
+- This approach improved the mean absolute error on a batch test cells, from 1,05%(industry standard method) to 0.38%(our method), (in % because we compute the capacity normalized with with starting value (in %)), in the context of the project it's was big difference.
 - This project was in a consulting context, the client was more relieved that output of the model resembeled the standard method of the industry.

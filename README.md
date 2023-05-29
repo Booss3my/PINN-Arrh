@@ -23,7 +23,7 @@ $\alpha$ : An acceleration coefficient
 $$\alpha(T) = a \exp\left(\frac{b}{T}\right)$$
 
   
-Where $a$ and $b$ are two parameters to estimate (they change depending on other factors like the difference in cell type, manufacturing, other parameters ...)
+Where $a$ and $b$ are two parameters to estimate (they change depending on other factors like the difference in cell type, manufacturing, initial State Of Charge and other parameters ...)
 
 
 Our approach was to leverage the same equation plus testing data to train a standard neural network (MLP), using a custom loss function that we defined as such :
@@ -48,7 +48,7 @@ Where: f (T, t, SOC; θ) is the model's response to the input (T, t, SOC) and θ
 $$ L_{CstPenalty} = \frac{1}{n}\sum|\frac{1}{\frac{\partial f}{\partial t}(T_i,t_i,SOC_i;\theta)}|$$
 
 3- MSE loss to learn from training samples : 
- L_{MSE} = \frac{1}{n}\sum_{i=1}^{n}(f(T_i,t_i,SOC_i;\theta) - C_i)^2
+ $$L_{MSE} = \frac{1}{n}\sum_{i=1}^{n}(f(T_i,t_i,SOC_i;\theta) - C_i)^2$$
 
 4- A loss to translate the boudary condition,  "no ageing at t=0"
 $$L_{Boundary} = \sum|f(T_{synth},0,SOC_{synth};\theta)|$$

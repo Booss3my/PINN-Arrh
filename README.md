@@ -1,6 +1,6 @@
 # PINN-Arrh
 
-Disclaimer: The code has been shared with the company's approval (also it's very unorganized since it's a proof of concept code) so here is an intro to the method :)
+Disclaimer: The code has been shared with the company's approval (also it's very unorganized since it's a proof of concept code) so here is an intro to the method : 
 
 ## A Physics-informed neural networks approach to modelling Li-Ion calendar ageing
 
